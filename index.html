@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="icon" type="image/png" href="./img/music.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main page -->
+    <div class="playlist-container">
+        <!-- Playlist songs -->
+        <div class="img-container">
+            <img src="img/img-1.jpg" alt="album list" />
+        </div>
+        <h2 id="title"></h2>
+        
+        <audio src="./music/img-1.mp3"></audio>
+        <!-- Progress bar-->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time"></span>
+                <span id="duration-time"></span>
+            </div>
+        </div>
+        <!-- Control panel -->
+        <div class="playlist-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play-circle" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+    </div>
+    <!-- End main page -->
+    
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
